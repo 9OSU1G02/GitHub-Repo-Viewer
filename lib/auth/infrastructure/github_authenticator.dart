@@ -101,6 +101,7 @@ class GithubAuthenticator {
       } on DioError catch (e) {
         if (e.isConnectionError) {
           // Ignore connection error
+          print("e.isConnectionError");
         } else {
           rethrow;
         }
